@@ -1,8 +1,12 @@
 
 
+# Nothing too serious here,
+# Just some fun with KMP string searching algorithm
+# by changing the values assigned to the 
+# table/comparison array in the failure_function()
+
 # Writing a Python class/module for KMP string searching 
 # algorithm
-# Just some little fun with Python and Algo
 # Just a very simple modified KMP algo
 
 class Knuth_Morris_Pratt:
@@ -32,7 +36,6 @@ class Knuth_Morris_Pratt:
 				if y != 0:
 					y = next[y-1]
 					#y=0
-
 
 				elif patt[y] != patt[z]:
 					y=0
@@ -65,7 +68,6 @@ class Knuth_Morris_Pratt:
 				z+=1
 
 			else:
-
 				if y != 0:
 					# Actual
 					y=next[y-1]
@@ -84,25 +86,10 @@ class Knuth_Morris_Pratt:
 			return -1
 
 
-
-
 patt="hothot"
 string="ABCD_hot_LLL_hothot"
 
 k=Knuth_Morris_Pratt()
 
 print k.kmp(patt, string)
-
-
-
-
-
-
-#print kmp.__doc__
-
-#failure_function(patt)
-
-#print kmp(patt, string)
-
-
 
