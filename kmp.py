@@ -51,7 +51,7 @@ class Knuth_Morris_Pratt:
 
 
 	def kmp(self, patt, string):
-		"KMP function"
+		"""KMP function"""
 		y=0
 		z=0		
 		M=len(patt)
