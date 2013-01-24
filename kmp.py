@@ -92,4 +92,3 @@ string="ABCD_hot_LLL_hothot"
 k=Knuth_Morris_Pratt()
 
 print k.kmp(patt, string)
-
